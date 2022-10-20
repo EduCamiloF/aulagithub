@@ -6,26 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aula de GitHub</title>
+    <img src="download.png" alt="Logo GitHub">
 </head>
 
 <body>
     <h1>Instalação e uso do GitHub</h1>
+    <hr>
     <p>Vídeo de referência: <a href="https://www.youtube.com/watch?v=_hZf1teRFNg" target="_blank">Tutorial Git e Github 2022 - Introdução prática para iniciantes</a></p>
     <p>Concorrentes:
         <br><a href="http://bitbucket.org" target="_blank" rel="external">Bitbucket</a>
-        <br><a href="http://gitlab.com" target="_blank" rel="external">Gitlab</a>
     </p>
 
     <h2> Primeiro passo: Instalar o GIT</h2>
-
+<hr>
     <p>site: GIT-SCM <a href="https://git-scm.com" target="_blank" rel="external">para fazer download do git</a> <br>
-        <br> Comandos:
+        <br> <strong>Comandos:</strong> 
         <br> sudo apt-get update
         <br> sudo apt-get install git curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev
         libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev software-properties-common libffi-dev
         <br> sudo apt-get update
     </p>
     <h2> Segundo passo: Fazer o cadastro no site do GitHub </h2>
+    <hr>
     <p>Site: <a href="https://github.com" target="_blank" rel="external">GitHub</a> <br>
         <br> Em Sign up
         <br> Enter Your email "Entre com seu e-mail"
@@ -33,29 +35,32 @@
         <br> Enter a username "Entre com um nome"
     </p>
     <h2>Terceiro passo: Configurar o usuário no git</h2>
-    <p> Comandos: <br>
+    <hr>
+    <p>  <strong>Comandos:</strong><br>
     <br> git config --global user.name "seu nome"
     <br> git config --global user.email "seu email cadastrado no GitHub"
     <br><br> Para confirmar a configuração use os seguinte comando
     <br> git config --list
 </p>
 <h2>Quarto passo: Configurar a chave SSH para o Github</h2>
+<hr>
 <p>
     Acesse o site de <a href="https://docs.github.com/pt/authentication" target="_blank" rel="external">Documentação do GitHub</a> nele teremos as instruções para criar uma chave SSH.
-    <br>Clique em <b>Connect with SSH -> </b> <a href="https://docs.github.com/pt/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent" target="_blank" rel="external">Generate new SSH Key</a>, escolha seu sistema operacional e siga os passos informados
+    <br>Clique em <strong> Connect with SSH </strong>-> <a href="https://docs.github.com/pt/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent" target="_blank" rel="external">Generate new SSH Key</a>, escolha seu sistema operacional e siga os passos informados
     <br>Após o comando verifique na sua pasta de usuário se foi criada a pasta .SSH, entre no arquivo id.rsa.pub ou id_ed25519.pub, copie todo o texto.
-    <br>Agora ir até o GitHub, lado direito em <b>settigs</b> -> <b>SSh and GPG Keys</b>-> <b>New SSH Key</b>   
+    <br>Agora ir até o GitHub, lado direito em <strong> Settings</strong> -> <b>SSh and GPG Keys</b>-> <b>New SSH Key</b>   
     <br> Escolha um Titulo, exemplo: "Computador do trabalho" e no campo Key cole o texto do arquivo .pub que você colou.
-    <br>Clique em <b>Add SSH Key</b>, para salvar.
+    <br>Clique em <strong> Add SSH Key </strong>, para salvar.
 </p>
 <h2>Quinto passo</h2>
+<hr>
 <p>
-    Salvar o primeiro versão de um projeto no Github
+    Salvar a primeira versão de um projeto no Github
     <br>Comandos:
     <br>git init 
     <br>add . 
     <br>git branch -M Main 
-    <br>-------------------------------------------------------------------------------------------------------
+    <hr>
     <br> Criar um projeto no site do seu Github primeiro
 
     <br>git remote add origin git@github.com:seuusuario/seurepositorio.git
